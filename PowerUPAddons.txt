@@ -1,0 +1,16 @@
+#Power up must:
+#Appear at top of screen
+#Move towards bottom of screen
+#Check for collision with player
+#Clear screen of enemies if it collides with player
+#Disappear at bottom of screen
+
+POWER_UP = pygame.image.load(os.path.join("assets", "pixel_power_up.png"))
+
+class PowerUp(Ship):
+    def __init__(self, x, y):
+	super().__init__(x, y)
+	self.powerup_img = POWER_UP
+	self.mask = pygame.mask.from_surface(self.powerup_img)
+
+    def draw(self, window):

@@ -1,0 +1,25 @@
+Install pygame via Powershell.
+Create new game directory.
+Create assets folder.
+Call libraries/imports pygame, os, time, random.
+Load images, group them based on function.
+Define main.
+In main, define run boolean set to True, FPS, clock.
+In main, write while run loop.
+Run loop will tick the game clock at FPS and listen for game events, including quit game.
+Quitting game returns run = False and ends game.
+Define redraw function within main, where images will be updated and refreshed.
+BLIT takes image files, aka surfaces, and will draw them at give x,y coordinates.
+(Remember that here, 0,0 is top left, not bottom left.)
+Call redraw within run loop.
+Images like bg that need to be scaled to fit can be scaled when first loaded.
+To display text, font needs to be declared.
+Declare base class ship from which all other player and game ships will inherit from.
+Enter key pressed listener in run while loop for player input.
+In player class, masks are used for perfect pixel to pixel collision detection. pygame.mask
+In enemy ship class, create a dictionary that will define color variable to color image.
+For spawning, create enemies list, and wave_length variable for enemy batches.
+Offset is based off of distance between two objects form their top-left coords.
+Offset must be calculated for both x and y and may be negative at times because of coords.
+
+1hr23min
